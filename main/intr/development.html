@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Violet</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="bookmark" type="image/x-icon" href="assets/textures/v.icon" />
+	<link rel="shortcut icon" href="v.icon">
+	<link rel="stylesheet" href="../../assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../../assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1>导论</h1>
+			<p>开发模型.</p>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Content -->
+			<section id="content" class="main">
+
+				<!-- Text -->
+				<section>
+					<p>
+						在这节中,我们将会粗略的讲一讲Minecraft mod的开发模型是什么样子的,<br />
+						理解这个模型将有助于你理解mod开发中的很多操作是为了什么.
+					</p>
+					<h2>「事件驱动模式」</h2>
+					<p>
+						Minecraft开发基本上遵循了「事件驱动模式」,<br />
+						对于「事件驱动模式」,我们得先理清三个概念：「事件」「事件处理器」和「总线」.
+					</p>
+					<h3>「事件」</h3>
+					<p>
+						「事件」就是「发生了某件事」.<br />
+						举例来说「当方块被破环」这个就是一个事件,<br />
+						「当玩家死亡」这个也是一个事件,<br />
+						当然我们前面举的都是非常具体的例子,事件也可以很抽象,<br />
+						比如「当渲染模型时」这个也是一个事件.
+					</p>
+					<h3>「事件处理器」</h3>
+					<p>
+						事件处理器就是用来处理「事件」的函数.<br />
+						我们可以创建一个事件处理器来处理「方块破坏事件」,<br />
+						里面的内容是「重新创建一个方块」,<br />
+						可以注册一个事件处理器来处理「玩家死亡事件」,<br />
+						里面的内容是「放置一个墓碑」.
+					</p>
+					<h3>「总线」</h3>
+					<p>
+						总线是连接「事件」和「事件处理器」的工具,<br />
+						当「事件」发生的时候,<br />
+						「事件」的信息将会被发送到总线上,<br />
+						然后总线会选择监听了这个「事件」的「事件处理器」,<br />
+						执行这个事件处理器.
+					</p>
+					<p>
+
+					</p>
+					<hr />
+					<div class="row">
+						<div class="col-6 col-12-medium">
+							<a href="vanilla.html" class="button fit">上一节|浅谈Minecraft如何运作的.</a>
+						</div>
+						<div class="col-6 col-12-medium">
+							<a href="core.html" class="button fit">下一节|核心概念.</a>
+						</div>
+					</div>
+				</section>
+			</section>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer id="footer">
+		<p class="copyright">
+			<a href="../../index.html">主页</a><br />
+			&copy; Violet. Author: <a href="https://center.mcmod.cn/147201/">HLFT</a>.
+		</p>
+	</footer>
+
+
+
+	<!-- Scripts -->
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../aassets/js/jquery.scrollex.min.js"></script>
+	<script src="../../aassets/js/jquery.scrolly.min.js"></script>
+	<script src="../../aassets/js/browser.min.js"></script>
+	<script src="../../aassets/js/breakpoints.min.js"></script>
+	<script src="../../aassets/js/util.js"></script>
+	<script src="../../aassets/js/main.js"></script>
+
+</body>
+
+</html>
