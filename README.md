@@ -10,4 +10,4 @@ SCSS
 HTML5
 JS
 #### 教程地址
-https://chemistry-dragon-burning-heaven.github.io/Violet
+https://chemistry-dragon-burning-heaven.github.io/Violet/
